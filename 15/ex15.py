@@ -22,4 +22,5 @@ txt_again = open(file_again)
 print txt_again.read()
 
 # ??
-ctxt = close()
+txt.close()
+txt_again.close()

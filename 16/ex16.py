@@ -11,6 +11,9 @@ raw_input("?")
 print "Opening the file..."
 target = open(filename, 'w')
 
+target1 = open(filename, 'r')
+print target1
+
 print "Truncating the file. Goodbye!"
 target.truncate()
 

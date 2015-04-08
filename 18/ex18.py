@@ -1,5 +1,7 @@
 # this one is like your scripts with argv
+# firstly def to make a function, and then name a name, followed by the functions/methods
 def print_two(*args):
+# this second line of unpacking is not necessary, which can be achieved by the print_two_again function
     arg1, arg2 = args
     print "arg1: %r, arg2: %r " % (arg1, arg2)
 
