@@ -1,8 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/model")
 def model():
+    
     ptype = raw_input("Project Type: ")
     size = int(raw_input("Size: "))
     rainfall = int(raw_input("Annual Rainfall (Inches): "))
@@ -18,4 +19,4 @@ def model():
     print "Annual Maintenance Cost: $60"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
