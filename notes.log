@@ -1,0 +1,347 @@
+xiekai@xiekais-MacBook-Pro ~/L/l/35> python
+Python 2.7.6 (default, Sep  9 2014, 15:04:36)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> testdict = {0.5 : 'test'}
+>>> testdict
+{0.5: 'test'}
+>>> testdict[0.5]
+'test'
+>>> class Record():
+...     def __init__(s, r1, r2, r3):
+...             s.r1 = r1
+...             s.r2 = r2
+...             s.r3 = r3
+...
+>>> kai = Record('Kai', 'Xie', 'Student')
+>>> wolf = Record('Wolf', 'Richter', 'Student')
+>>> mydict = dict()
+>>> typeof mydict
+  File "<stdin>", line 1
+    typeof mydict
+                ^
+SyntaxError: invalid syntax
+>>> type mydict
+  File "<stdin>", line 1
+    type mydict
+              ^
+SyntaxError: invalid syntax
+>>> typeof(mydict
+... )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'typeof' is not defined
+>>> type(mydict)
+<type 'dict'>
+>>> type(kai)
+<type 'instance'>
+>>>
+>>> type(wolf)
+<type 'instance'>
+>>> wolf is a Record
+  File "<stdin>", line 1
+    wolf is a Record
+                   ^
+SyntaxError: invalid syntax
+>>> kai
+<__main__.Record instance at 0x106658b00>
+>>> wolf
+<__main__.Record instance at 0x106658b90>
+>>>
+>>>
+>>> mydict
+{}
+>>> kai
+<__main__.Record instance at 0x106658b00>
+>>> wolf
+<__main__.Record instance at 0x106658b90>
+>>> kai.r1
+'Kai'
+>>> kai.r2
+'Xie'
+>>> kai.r3
+'Student'
+>>> wolf.r1
+'Wolf'
+>>> wolf.r2
+'Richter'
+>>> wolf.r3
+'Student'
+>>> wolf.r4
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: Record instance has no attribute 'r4'
+>>> wolf.run()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: Record instance has no attribute 'run'
+>>> class Record():
+...
+KeyboardInterrupt
+>>> class Record:
+...     def __init__(a, r1, r2, r3):
+...             a.r1 = r1
+...             a.r2 = r2
+...             a.r3 = r3
+...
+>>> class Record:
+...     def __init__(a, r1, r2, r3):
+...             a.r1 = r1
+...             a.r2 = r2
+...             a.r3 = r3
+...     def run(a):
+...             print a.r1 + ' is running!'
+...
+>>> kai = Record('Kai', 'Xie', 'Student')
+>>> kai
+<__main__.Record instance at 0x106658cb0>
+>>> kai.run()
+Kai is running!
+>>> class Car:
+...     def __init__():
+...
+  File "<stdin>", line 2
+    def __init__():
+                  ^
+IndentationError: expected an indented block
+>>> class Car:
+...     def __init__(self): pass
+...     def drive(self): print 'DRIVING THE CAR'
+...
+>>> class Toyota(Car):
+...     def __init__(self): pass
+...
+>>> class Camry(Toyota):
+...     def __init__(self): pass
+...
+>>>
+>>> kaisCar = Camry()
+>>> kaisCar
+<__main__.Camry instance at 0x106658c20>
+>>> kaisCar.drive()
+DRIVING THE CAR
+>>> class Camry(Toyota):
+...     def __init__(self): pass
+...     def drive(self): print 'Driving my Camry!'
+  File "<stdin>", line 3
+    def drive(self): print 'Driving my Camry!'
+                                             ^
+IndentationError: unindent does not match any outer indentation level
+>>>
+>>> class Camry(Toyota):
+...     def __init__(self): pass
+... def drive(self): print 'Driving my Camry!'
+  File "<stdin>", line 3
+    def drive(self): print 'Driving my Camry!'
+      ^
+SyntaxError: invalid syntax
+>>> class Camry(Toyota):
+...     def drive(self): print 'Driving my Camry!'
+...
+>>> kaisCar = Camry()
+>>> kaisCar.drive()
+Driving my Camry!
+>>> kaisCar
+<__main__.Camry instance at 0x106658b00>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry()
+<__main__.Camry instance at 0x106658c20>
+>>> Camry()
+<__main__.Camry instance at 0x106658cf8>
+>>> Camry(1,2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: __init__() takes exactly 1 argument (3 given)
+>>> Camry()
+<__main__.Camry instance at 0x106658dd0>
+>>> Camry.__name__
+'Camry'
+>>> kaisCar.__name__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: Camry instance has no attribute '__name__'
+>>>
+>>> Bird
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Bird' is not defined
+>>> Record
+<class __main__.Record at 0x1066448d8>
+>>> Record(1,2,3)
+<__main__.Record instance at 0x106658cb0>
+>>>
+>>> class TV:
+...     def __init__(self, size):
+...             self.volume = 0
+...             self.input = 'Antenna'
+...             self.channel = 0
+...     def volumeUp(self):
+...             self.volume += 1
+...     def volumeDown(self):
+...             self.volume -= 1
+...     def channel(self, chan):
+...             self.channel = chan
+...
+>>> aquosA1000C - TV(45)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'aquosA1000C' is not defined
+>>> aquosA1000C = TV(45)
+>>> aquosA1000B = TV(45)
+>>> aquosA1000A = TV(45)
+>>> aquos1000C.volumeUp()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'aquos1000C' is not defined
+>>> aquosA1000C.volumeUp()
+>>>
+>>>
+>>> aquosA1000C.volume
+1
+>>> aquosA1000B.volume
+0
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> class Math():
+...     def add(self, x, y):
+...             return x + y
+...     def subtract(self, x, y):
+...             return x - y
+...     def multiply(self, x, y):
+...             return x * y
+...
+>>> calculator = Math()
+>>> calculator.add(1,2)
+3
+>>> calculator.subtraction(2,1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: Math instance has no attribute 'subtraction'
+>>> calculator.subtract(2,1)
+1
+>>> calculator.multiply(2,2)
+4
+>>> caclulator.add
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'caclulator' is not defined
+>>> calculator.add
+<bound method Math.add of <__main__.Math instance at 0x106658f80>>
+>>> aquosA1000C.volume
+1
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> calculator.add(1,2)
+3
+>>> calculator # --> Python says this is a instantiation of a class Math
+<__main__.Math instance at 0x106658f80>
+>>> calculator.add # --> Python says this is a method/function of class Math
+<bound method Math.add of <__main__.Math instance at 0x106658f80>>
+ instantiated object calculator with variables x =1 and y=2 add of class Math on
+ instantiated object calculator with variables x =1 and y
+KeyboardInterrupt
+>>>
+ inscalculator.add
+KeyboardInterrupt
+>>>
+>>> mylist = [1,2,3,4,5,6,7,8,9]
+>>> mylist.pop(0)
+1
+>>> mylist
+[2, 3, 4, 5, 6, 7, 8, 9]
+>>> mylist.pop()
+9
+>>> mylist
+[2, 3, 4, 5, 6, 7, 8]
+>>> mylist.pop()
+8
+>>> mylist
+[2, 3, 4, 5, 6, 7]
+>>> mylist.pop(-1)
+7
+>>> mylist.pop(-1)
+6
+>>> mylist.pop(-1)
+5
+>>> mylist.pop(-1)
+4
+>>> dir(mylist)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__delslice__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__setslice__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> x = 1
+>>> y = 2
+>>> print x
+1
+>>>
